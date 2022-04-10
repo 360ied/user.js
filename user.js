@@ -1360,3 +1360,8 @@ user_pref("security.csp.enable", true); // [DEFAULT: true]
 
 /* END: internal custom pref to test for syntax errors ***/
 user_pref("_user.js.parrot", "SUCCESS: No no he's not dead, he's, he's restin'!");
+
+// 360ied custom:
+
+// enable compact mode:
+user_pref("browser.compactmode.show", true);
