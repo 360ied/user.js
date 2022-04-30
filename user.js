@@ -1368,5 +1368,5 @@ user_pref("browser.compactmode.show", true);
 
 // fix pipewire cpu usage
 // https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Performance-tuning#firefox
-user_pref("render.parse-on-load.enabled", false);
+user_pref("reader.parse-on-load.enabled", false);
 user_pref("media.webspeech.synth.enabled", false);
