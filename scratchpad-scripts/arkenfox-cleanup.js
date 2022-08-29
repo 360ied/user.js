@@ -3,7 +3,7 @@
   - removed from the arkenfox user.js
   - deprecated by Mozilla but listed in the arkenfox user.js in the past
 
-  Last updated: 5-May-2022
+  Last updated: 23-August-2022
 
   Instructions:
   - [optional] close Firefox and backup your profile
@@ -32,15 +32,21 @@
 
   const aPREFS = [
     /* DEPRECATED */
+    /* 103+ */
+    'network.cookie.lifetimePolicy', // 103 [technically removed in 104]
+    'security.pki.sha1_enforcement_level', // 103
     /* 92-102 */
     'browser.urlbar.suggest.quicksuggest', // 95
     'dom.securecontext.whitelist_onions', // 97
+    'dom.storage.next_gen', // 102
     'network.http.spdy.enabled', // 100
     'network.http.spdy.enabled.deps',
     'network.http.spdy.enabled.http2',
     'network.http.spdy.websockets',
     'layout.css.font-visibility.level', // 94
+    'security.ask_for_password', // 102
     'security.csp.enable', // 99
+    'security.password_lifetime', // 102
     'security.ssl3.rsa_des_ede3_sha', // 93
     /* 79-91 */
     'browser.cache.offline.storage.enable',
@@ -231,7 +237,13 @@
     'toolkit.telemetry.unifiedIsOptIn',
 
     /* REMOVED */
+    /* 103+ */
+    'extensions.formautofill.available',
+    'extensions.formautofill.addresses.supported',
+    'extensions.formautofill.creditCards.available',
+    'extensions.formautofill.creditCards.supported',
     /* 92-102 */
+    'browser.urlbar.trimURLs',
     'dom.caches.enabled',
     'dom.storageManager.enabled',
     'dom.storage_access.enabled',
