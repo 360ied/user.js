@@ -1220,8 +1220,3 @@ user_pref("_user.js.parrot", "SUCCESS: No no he's not dead, he's, he's restin'!"
 
 // enable compact mode:
 user_pref("browser.compactmode.show", true);
-
-// fix pipewire cpu usage
-// https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Performance-tuning#firefox
-user_pref("reader.parse-on-load.enabled", false);
-user_pref("media.webspeech.synth.enabled", false);
